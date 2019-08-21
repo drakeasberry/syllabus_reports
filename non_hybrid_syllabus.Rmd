@@ -1,0 +1,104 @@
+---
+#title: "Syllabi"
+#author: "Drake Asberry"
+#date: "7/16/2019"
+output: pdf_document
+urlcolor: blue
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+# This document allows you to create all the syllabi via running a script and all you need to do is supply the name of the course you are working on.
+
+```
+
+\begin{center}
+% Do NOT change line spacing in this section. It will cause formatting problems
+
+\LARGE Department of Spanish and Portuguese
+
+\large University of Arizona 
+
+\large Spanish `r course`
+
+\large `r semester`
+
+\end{center}
+
+<!--This section includes information about instructor, their contact and office hour informaiton as required by the University of Arizona. Again do NOT changing line spacing as it will mess up your formatting. -->
+<!--| type of information | blank lines | --> 
+
+
+**Instructor:**    ___________________________
+
+**Office hours:**  __________________________
+
+**Office:**        ______________________________
+
+**E-mail:**        _____________________________
+
+
+**Course Description:** `r courseDescription`
+
+**Course Objectives:**
+
+By the end of Spanish `r courseNum`, students will be able to …
+
+`r courseObjectives`
+
+**Learning Outcomes:**
+
+`r learningOutcomes`
+
+**Required Texts:**
+
+`r requiredTexts`
+
+**Recommended Texts:**
+
+`r recommendedMaterials`
+
+\newpage
+
+**Grades:**
+
+Final grade will be calculated according to the table below.
+
+`r gradeTable`
+
+\begin{center}
+
+\textbf{Grading Scale:}
+90 - 100 = A	80 - 89 = B	70 - 79 = C	60 - 69 = D	below 60 = E
+
+\end{center}
+
+**Course Policies:** `r coursePolicy`
+
+**Attendance:** `r attendance`
+
+`r onlineInstruction`
+ 
+`r groupSkits`
+
+`r pairInterviews` 
+
+**In-Class Writings:** `r inclassWritings`
+
+`r essayEditing`
+
+`r rpaDesc` 
+
+**Exams:** `r exam`
+
+`r lessonTestsQuizzes`
+
+`r homework`
+
+`r thinkTank`
+
+`r accessibility`
+
+`r nonDiscriminatory`
+
+`r codeOfConduct`
