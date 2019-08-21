@@ -45,7 +45,8 @@ span101LO = '- express ideas about familiar and everyday topics using memorized 
 - communicate in spontaneous conversations that revolve around highly practiced and very familiar activities or topics.
 - express their own likes and dislikes as well as ask about someone’s likes and dislikes.
 - introduce and describe themselves and other people.
-- identify key points and gain a general understanding of informational texts and classroom type discussions and peer conversations.
+- identify key points and gain a general understanding of informational texts. 
+- identify key points and gain a general understanding of classroom discussions and peer conversations.
 - identify cultural differences when compared with their own culture or other cultures discussed in class.
 - write a well-developed paragraph in Spanish.'
 
@@ -53,13 +54,15 @@ span102LO = '- express ideas about familiar and everyday topics using practiced 
 - communicate in spontaneous conversations that revolve around highly practiced and familiar activities or topics.
 - express their own likes and dislikes as well as ask about someone’s likes and dislikes.
 - introduce and describe themselves and other people.
-- identify key points and gain a general understanding of informational texts and classroom type discussions and peer conversations.
+- identify key points and gain a general understanding of informational texts. 
+- identify key points and gain a general understanding of classroom discussions and peer conversations.
 - identify and discuss cultural differences as well as compare and contrast the target culture with their own culture.
 - write two well-developed and connected paragraphs in Spanish.'
 
 span201LO = '- express ideas about familiar and everyday topics using their own language creation in written and spoken formats.
 - communicate in spontaneous conversations that revolve around familiar activities or topics while maintaining conversation by asking appropriate follow-up questions.
-- express with some detail their own preferences, feelings and opinions about familiar topics as well as ask about someone’s preferences, feelings and opinions by utilizing appropriate follow-up questions.
+- express with some detail their own preferences, feelings and opinions about familiar topics.
+- ask about someone’s preferences, feelings and opinions by utilizing appropriate follow-up questions.
 - identify key points, extract related details and gain a general understanding when reading informational and fictional texts. 
 - identify the main idea of short conversations of Spanish at a natural rate of speech.
 - follow and participate in classroom type discussions and peer conversations.
@@ -68,11 +71,12 @@ span201LO = '- express ideas about familiar and everyday topics using their own 
 
 span202LO = '- express ideas about familiar everyday topics and researched topics using their own language creation in written and spoken formats.
 - communicate in spontaneous conversations that revolve around familiar activities or researched topics while maintaining conversation by asking appropriate follow-up questions.
-- express with some detail their own preferences, feelings, opinions and give simple advice about familiar topics as well as ask about someone’s preferences, feelings, opinions or advice by utilizing appropriate follow-up questions.
+- express with some detail their own preferences, feelings, opinions and give simple advice about familiar topics.
+- ask about someone’s preferences, feelings, opinions or advice by utilizing appropriate follow-up questions.
 - tell stories about their life events and social activities.
 - state their viewpoint on familiar topics and give simple supporting details for their viewpoint.
 - understand key points, the main idea and related details when reading informational and fictional texts. 
-- identify the main idea and related details of short straightforward conversations in Spanish at a natural rate speech. 
+- identify the main idea and related details of short straightforward conversations in Spanish at a natural rate of speech. 
 - follow and participate in classroom type discussions and peer conversations.
 - identify and discuss cultural differences when compared with their own culture or other cultures discussed in class.
 - write a well-developed 3-4 paragraph composition in Spanish.'
@@ -99,45 +103,51 @@ recommendedMaterials200 = '- A good full-size bilingual Spanish-English dictiona
 hybridGradeTable = '
 |Category           |Weight |Category                |Weight |
 |-------------------|:-----:|------------------------|:-----:|
-|Online Instruction	|10%    |Midterm Exam	         |15%    |
-|Group Skits        |10%    |Final Exam	             |15%    |
-|Pair Conversations	|10%    |Lesson Tests	         |10%    |
-|In-class Writings	|15%    |VHL Central & Homework	 |15%    |
+|Online Instruction	|10%    |Exams			         |30%    |
+|Group Skits        |10%    |Lesson Tests	         |10%    |
+|Pair Conversations	|10%    |VHL Central & Homework	 |15%    |
+|In-class Writings	|15%    |						 |       |
 '
 
 regular100GradeTable = '
 |Category           |Weight |Category                |Weight |
 |-------------------|:-----:|------------------------|:-----:|
-|Attendance			|5%     |Midterm Exam	         |15%    |
-|Group Skits        |10%    |Final Exam	             |15%    |
-|Pair Conversations	|10%    |Lesson Tests	         |10%    |
+|Group Skits        |10%    |Exams	             	 |30%    |
+|Pair Conversations	|10%    |Lesson Tests	         |15%    |
 |In-class Writings	|15%    |VHL Central & Homework	 |20%    |
+'
+
+intensive7weeks100GradeTable = '
+|Category           |Weight |Category                |Weight |
+|-------------------|:-----:|------------------------|:-----:|
+|Pair Conversations |15%    |Exams	         		 |30%    |
+|In-class Writings  |20%    |VHL Central & Homework  |20%    |
+|Lesson Tests       |15%    |						 |       |
 '
 
 regular200GradeTable = '
 |Category           |Weight |Category                |Weight |
 |-------------------|:-----:|------------------------|:-----:|
-|Attendance			|5%     |RPAs	         		 |10%    |
-|Group Skits        |10%    |Exams	             	 |30%    |
-|Pair Conversations	|10%    |Lesson Tests	         |10%    |
-|In-class Writings	|15%    |VHL Central & Homework	 |10%    |
+|Group Skits        |10%    |Exams 	 	    		 |30%    |
+|Pair Conversations	|10%    |Quizzes	    	     |10%    |
+|In-class Writings	|15%    |VHL Central & Homework	 |15%    |
+|RPAs	         	|10%    |						 |       |
 '
 
 intensive205GradeTable = '
 |Category           |Weight |Category                |Weight |
 |-------------------|:-----:|------------------------|:-----:|
-|Attendance			|5%     |Exams	         		 |40%    |
-|Group Skits        |10%    |Lesson Tests          	 |15%    |
-|In-class Writings  |20%    |VHL Central & Homework  |10%    |
+|Pair Conversations |10%    |Exams	         		 |40%    |
+|In-class Writings  |15%    |VHL Central & Homework  |20%    |
+|Lesson Tests       |15%    |						 |       |
 '
 
 intensive206GradeTable = '
 |Category           |Weight |Category                |Weight |
 |-------------------|:-----:|------------------------|:-----:|
-|Attendance			|5%     |RPAs	         		 |10%    |
 |Group Skits        |10%    |Exams	             	 |30%    |
-|Pair Conversations	|10%    |Lesson Tests	         |10%    |
-|In-class Writings	|15%    |VHL Central & Homework	 |10%    |
+|In-class Writings	|15%    |Quizzes		         |15%    |
+|RPAs	         	|10%    |VHL Central & Homework	 |20%    |
 '
 
 regular251GradeTable = '
@@ -157,7 +167,7 @@ attendance3day = "Regular class attendance is essential for successful completio
   - A student with six (6) absences, the student's final grade will drop by 6 percentage points.
   - A student with eight (8) absences, the student's final grade will drop by 10 percentage points **(That's an entire letter grade)**.
   
-If a student stops attending class, it is the student's responsibility to drop the class. In compliance with Undergraduate Syllabus Policy instructors may not accept students’ documentation of health-related issues in order to have an excused absence. If a student is experiencing an unexpected barrier to their success in their courses, the Dean of Students Office is located in the Robert L. Nugent Building Room 100, or call 520-621-7057."
+If a student stops attending class, it is the student's responsibility to drop the class. In compliance with Undergraduate Syllabus Policy instructors may not accept students’ documentation of health-related issues in order to have an excused absence. If a student is experiencing an unexpected barrier to their success in their courses, the Dean of Students Office is a central support resource for all students and may be helpful. The Dean of Students Office is located in the Robert L. Nugent Building Room 100, or call 520-621-7057."
 
 attendance5day = "Regular class attendance is essential for successful completion of this course. With the exception of days scheduled for tests, quizzes, or in-class writings, students may miss five (5) classes for any reason, personal, medical, etc. Absences for any sincerely held religious belief, observance or practice will be accommodated where reasonable, [**University of Arizona Attendance Policy**](http://policy.arizona.edu/human-resources/religious-accommodation-policy). Absences pre-approved by the UA Dean of Students (or Dean’s designee) will be honored.
 
@@ -169,9 +179,15 @@ attendance5day = "Regular class attendance is essential for successful completio
   - A student with eight (8) absences, the student's final grade will drop by 6 percentage points.
   - A student with ten (10) absences, the student's final grade will drop by 10 percentage points **(That's an entire letter grade)**.
   
-If a student stops attending class, it is the student's responsibility to drop the class. In compliance with Undergraduate Syllabus Policy instructors may not accept students’ documentation of health-related issues in order to have an excused absence. If a student is experiencing an unexpected barrier to their success in their courses, the Dean of Students Office is located in the Robert L. Nugent Building Room 100, or call 520-621-7057."
+If a student stops attending class, it is the student's responsibility to drop the class. In compliance with Undergraduate Syllabus Policy instructors may not accept students’ documentation of health-related issues in order to have an excused absence. If a student is experiencing an unexpected barrier to their success in their courses, the Dean of Students Office is a central support resource for all students and may be helpful. The Dean of Students Office is located in the Robert L. Nugent Building Room 100, or call 520-621-7057."
 
-essayEdits = 'The two first in-class writings will provide time for students to focus on the writing process—brainstorming, rough drafts, editing/revising, peer editing and final draft submission. You must be present and actively complete all steps in the writing process to receive full credit. If you are absent or fail to complete the in-class writing of the rough draft (30%) or the peer editing (10%), you will automatically lose the points associated with each task. You will turn in the rough draft, the peer revision sheet, the final draft (typed and double-spaced in Times New Roman font size 12, with 1” margins all around), and the printed grading rubric as a packet. If the final draft (60%) is not handed in on the due date with the original rough draft and peer editing work, you will receive a zero for the final draft. The third in-class writing will consist on a reflective statement about the group oral presentations.'
+essayEdits = 'The in-class writings will provide time for students to focus on the writing process—brainstorming, rough drafts, editing/revising, peer editing and final draft submission. You must be present and actively complete all steps in the writing process to receive full credit. 
+
+- Rough Draft (30 percent)
+- Peer Editing (10 percent)
+- Final Draft (60 percent)
+
+If you are absent or fail to complete any portion of the in-class writing, you will automatically lose the points associated with each missed task. You will turn in the rough draft, the peer revision sheet, the final draft (typed and double-spaced in Times New Roman font size 12, with 1” margins), and the printed grading rubric as a packet found in D2L. If the final draft is not handed in on the due date with the original rough draft and peer editing work, you will receive a zero for the final draft.'
 
 essay251 = 'There are two essays during the semester that will use three class days, which will provide time for students to focus on the writing process—brainstorming, rough drafts, editing/revising, peer editing and final draft submission. All drafts and final versions must be typed, double-spaced, and include a heading and title. The students should use 12 point and Times New Roman font. Essays should be submitted with student name, instructor name, course name and section number, and the date in the upper left-hand corner of the first page. All additional pages will only have the last name of the student and the page number in upper right-hand corner as a document header.
 
@@ -189,18 +205,18 @@ Students will read the sample of literature at home before coming to class and t
 
 lessonTests = '**Lesson Tests:** This section includes all announced or unannounced quizzes that the instructor chooses to give throughout the semester. Lesson tests are designed following *Principles of Universal Design* and will be delivered via your required VHLCentral/Portales access [**VHLCentral**](https://www.vhlcentral.com) website. The lesson tests may focus on listening comprehension, reading comprehension, grammar, vocabulary and/or culture. No lesson test/unannounced quizzes may be made up for any reason. If you experience any technical difficulties while attempting to complete your lesson tests, you must fill out a **Report a technical problem** form immediately, which is found within the help menu at top right of the lesson test. Complete the form with as much detail as possible, explaining the problem you are having. Your instructor is not responsible for maintaining the VHLCentral/Portales online learning system or resolving technical issues; therefore, s/he is unable to help you with any technical and/or scheduling problems you may encounter. If a problem that you reported to VHL persists, you may report the issue with the incident number provided by VHL to your instructor.'
 
-quizzes = '**D2L Quizzes** This section includes all announced quizzes or any unannounced quizzes that the instructor chooses to give at the http://www.d2l.arizona.edu website or during scheduled class times. The quizzes may focus on listening comprehension, reading comprehension, grammar, vocabulary, or culture. No quiz may be made up for any reason. If you experience any technical difficulties while attempting to complete your D2L quizzes you should fill out a “Report a Problem” form immediately at http://help.d2l.arizona.edu and complete the form with as much detail as possible, explaining the problem you are having. Your instructor is not responsible for maintaining the D2L system; therefore, s/he is unable to help you with any technical and/or scheduling problems you may encounter.'
+quizzes = '**Quizzes** This section includes all announced quizzes or any unannounced quizzes that the instructor chooses to give at the [**D2L course website**](http://www.d2l.arizona.edu) or during scheduled class times. The quizzes may focus on listening comprehension, reading comprehension, grammar, vocabulary, or culture. No quiz may be made up for any reason. If you experience any technical difficulties while attempting to complete your D2L quizzes you should fill out a [**Report a Problem**](http://help.d2l.arizona.edu) form immediately with as much detail as possible explaining the problem you are having. Your instructor is not responsible for maintaining the D2L system; therefore, s/he is unable to help you with any technical and/or scheduling problems you may encounter. Failure to take appropriate measures when experiencing technical issues within **24 hours** of the quiz deadline will result in a zero (0) for the quiz.'
 
-vhlHomework = '**VHLCentral & Homework:** The online exercises and assessments in VHLCentral are to be finished after you have completed the related in-class textbook material. The on-line exercises include writing, reading and listening activities and presents additional grammatical explanations. It is not just "more of the same" but rather an integral component of the course. You must complete each assigned VHL activity and any other homework your instructor chooses to assign outside of class time by the due date. No late homework is accepted. See the calendar at [**VHLCentral**](https://www.vhlcentral.com) (log into your account) for assigned activities and due dates.'
+vhlHomework = '**VHLCentral & Homework:** The online exercises and assessments in VHLCentral are to be finished after you have completed the related in-class textbook material. The online exercises include writing, reading and listening activities and presents additional grammatical explanations. It is not just "more of the same" but rather an integral component of the course. You must complete each assigned VHL activity and any other homework your instructor chooses to assign outside of class time by the due date. No late homework is accepted. See the calendar at [**VHLCentral**](https://www.vhlcentral.com) (log into your account) for assigned activities and due dates.'
 
-ilrnHomework = '**iLrn & Homework:** The workbook exercises are to be finished after you have completed the related in-class textbook material, since the on-line workbook contextualizes the material from the textbook. The on-line workbook includes written activities and presents additional grammatical activities and, therefore, is an integral component of the course. You must complete each assigned iLrn activity and any other homework your instructor chooses to assign outside of class time by the due date. No late homework is accepted. See the calendar on the iLrn website for assigned activities and due dates.'
+ilrnHomework = '**iLrn & Homework:** The workbook exercises are to be finished after you have completed the related in-class textbook material, since the online workbook contextualizes the material from the textbook. The online workbook includes written activities and presents additional grammatical activities and, therefore, is an integral component of the course. You must complete each assigned iLrn activity and any other homework your instructor chooses to assign outside of class time by the due date. No late homework is accepted. See the calendar on the iLrn website for assigned activities and due dates.'
 
 thinkTank = "**Think Tank Spanish Tutoring:** The Department of Spanish and Portuguese offers free tutoring Monday through Friday at the Bear Down Gym from 9:00 am to 1:00 pm, and at the Student Recreation Center from 1:00 pm to 5:00 pm. This is a cooperative service between the Department of Spanish and Portuguese and the THINK TANK for on-campus academic support, which allows you to reach a Spanish instructor and receive instant feedback. This service provides 40 hours per week of tutoring so students have the opportunity to ask questions regarding the target language and culture. For more information, please visit the [**Student Affairs Website**](http://thinktank.arizona.edu/tutoring/language). 
 
 *PLEASE NOTE:* Spanish tutors will not correct your writing assignments before the final grade has been given."
 
 accessibility = "**Accessibility and Accommodations:**
-At the University of Arizona,we strive to make learning experiences  as accessible as possible. If you anticipate or experience barriers based on disability or pregnancy, please visit the [**Disability Resource Center Website**](https://drc.arizona.edu/) or contact via phone at 520-621-3268 to establish reasonable accommodations.
+At the University of Arizona, we strive to make learning experiences  as accessible as possible. If you anticipate or experience barriers based on disability or pregnancy, please visit the [**Disability Resource Center Website**](https://drc.arizona.edu/) or contact via phone at 520-621-3268 to establish reasonable accommodations.
 Students who are registered with the Disability Resource Center must make sure appropriate documentation has been provided to the instructor if they are requesting reasonable accommodations.
 
 **Threatening and Disruptive Behavior Policy:** The University of Arizona Threatening Behavior by Students Policy prohibits threats of physical harm to any member of the University community, including to one’s self. Students are responsible for reading and understanding this policy, please refer to the [**Threatening and Disruptive Behavior Policy**](http://policy.arizona.edu/education-and-student-affairs/threatening-behavior-students)."
@@ -219,7 +235,12 @@ All instructors shall foster an expectation of academic integrity. If the instru
 
 *PLEASE NOTE:* This document constitutes the guidelines for the class but are subject to change based on class needs deemed appropriate by the instructor with prior notice given to students. Grading and absence policies are exempt from this subject to change policy."
 
+departmentAds ="**Find out more about what is happening in the College of Humanities:**
 
+- Read more at the [**College of Humanities Website**](https://choose.humanities.arizona.edu/) or watch the [**College of Humanities Video**](https://www.youtube.com/watch?v=2wPqsD_DGHY&feature=youtu.be).
+- Interested in declaring a [**Spanish Major**](https://spanish.arizona.edu/undergrad/spanish-major) or [**Spanish Minor**](https://spanish.arizona.edu/undergrad/spanish-minor)?
+- Read about [**Spanish and Portuguese Alumni**](https://spanish.arizona.edu/people/alumni) or watch [**Autumn DiGaetano-Fedoruk's**](https://www.youtube.com/watch?v=ilmeDJ7N07Y&feature=youtu.be) video.
+"
 
 coursesCombined = c(courses101,courses102,courses201,courses202,courses251,courses205,courses206,
 	coursesHybrid101,coursesHybrid102,courses7weeks101,courses7weeks102)
@@ -253,6 +274,9 @@ descriptions <- function(course,courseNum){
 	if(courseNum == '101'){
 		verbDesc = 'begins'
 	}
+	else if(courseNum == '205'){
+		verbDesc = 'begins'
+	}	
 	else if(courseNum != '251'){
 		verbDesc = 'continues'
 	}
@@ -282,7 +306,6 @@ It is important and necessary for language acquisition that students make an eff
 Using the digital textbook (eCompanion) is acceptable, but the use of cell phones or any other electronic devices for non-class related activities or materials is strictly prohibited and is considered disruptive behavior (see information below). Unless you get prior approval from your instructor due to an emergency situation, all phones must be turned off during class. If a student is violating the course’s electronic device policy, the instructor will take the following course of action:
 
 - 1st violation – the instructor will give the student a verbal warning.
-
 - 2nd violation – the instructor will ask the student to leave the classroom and student will be counted absent regardless of the time of removal from the classroom. The student is required to attend the instructor’s next set of office hours immediately following a removal from the classroom. During the meeting in the instructor’s office, the appropriate forms required by the University of Arizona and the Department of Spanish and Portuguese will be completed to record the date and nature of the disruptive behavior.", courseNum, spanishPercentage)
 
 	return(policyText)
@@ -312,7 +335,7 @@ skits <- function(courseNum){
 	}
 	skitText = sprintf('**Group Skits:** The group skit is completed on regularly scheduled Face-to-Face class days as noted in the Weekly Calendar found at the end of the syllabus. If a student is absent for their group skit, the group will present as scheduled without the absent student who will receive a zero (0) for the group skit. There are no make-up group skits.
 
-Groups will consist of a minimum of three students who will collectively perform a short %s-minute live skit, which will be reviewed by your peers and your instructor. Please consult with the instructor to get prior approval of the group’s topic and to avoid the repetition of ideas. 
+Groups will consist of a minimum of three students who will collectively perform a short %s minute live skit, which will be viewed by your peers and your instructor. Please consult with the instructor to get prior approval of the group’s topic and to avoid the repetition of ideas. 
 
 *PLEASE NOTE:* If the student reads any part of the presentation, 50 percent will automatically be taken off of the final grade for this group oral presentation. Please review the rubric for this presentation found in D2L before and during the skit’s preparation.', skitTime)
 	return(skitText)
@@ -325,6 +348,9 @@ interviews <- function(courseNum){
 	else if(courseNum == '102'){
 		interviewTime = '5 to 7'
 	}
+	else if(courseNum == '205'){
+		interviewTime = '5 to 7'
+	}	
 	else if(courseNum == '201'){
 		interviewTime = '7 to 8'
 	}
@@ -337,11 +363,11 @@ interviews <- function(courseNum){
 	else{
 		paste(courseNum, ' is not avaialble at this time.')
 	}
-	interviewText = sprintf('**Pair Conversations:** The pair conversation is completed on a regularly scheduled class day as noted in the Weekly Calendar found at the end of the syllabus. The instructor will have a sign-up process for students to schedule a time to complete the interview with one of their classmates. On the interview days, students only need to be present for their scheduled time. However, if students are not present on the day and time of their scheduled interview, their partner will complete the interview with another classmate and the student who failed to show up at the correct time will receive a zero (0) for the interview. There are no make-up interviews.
+	interviewText = sprintf('**Pair Conversations:** The pair conversation is completed on a regularly scheduled class day as noted in the Weekly Calendar found at the end of the syllabus. The instructor will have a sign-up process for students to schedule a time to complete the pair conversation with one of their classmates. On the pair conversation days, students only need to be present for their scheduled time. However, if students are not present on the day and time of their scheduled pair conversation, their partner will complete the conversation activity with another classmate and the student who failed to show up at the correct time will receive a zero (0) for the pair conversation. There are no make-up pair conversations.
 
-Pair conversations must be done completely in Spanish and last for a total duration of %s minutes. Each student should contribute equally in the interview process, time and content. Each student will be evaluated on comprehensibility, creativity, content, grammatical accuracy, and vocabulary.
+Pair conversations must be done completely in Spanish and last for a total duration of %s minutes. Each student should contribute equally in the pair conversation activity, time and content. Each student will be evaluated on comprehensibility, creativity, content, grammatical accuracy, and vocabulary.
 
-*PLEASE NOTE:* If the student reads anything during the interview, 50 percent will automatically be taken off of the final grade for this pair interview. Please review the rubric for pair interviews found in D2L before your scheduled interview time.',interviewTime)
+*PLEASE NOTE:* If the student reads anything during the pair conversation, 50 percent will automatically be taken off of the final grade for this pair conversation. Please review the rubric for pair conversations found in D2L before your scheduled conversation time.',interviewTime)
 	return(interviewText)
 }
 
@@ -385,15 +411,10 @@ exams <- function(courseNum,examity){
 **Department of Spanish and Portuguese Examity Regulations and Expectations:**
 
 - If a student misses their scheduled exam or fails to schedule an exam time, they will receive a zero (0) for that exam and will not be allowed to make up the exam.
-
 - If a student is red-flagged by the proctor during their exam, they will be required to meet with a representative of the Spanish and Portuguese Department within **48 hours** to discuss the violation. If the student fails to attend the requested meeting, they will receive a zero (0) for the exam and will not be granted a make up exam.
-
 - Students are expected to regularly check and ensure their computers meet all of [**Examity's Technical Specifications**](https://examity.com/test-takers/) and are in good working condition. If the student fails to complete the exam due to preventable technical issues, the student will receive a zero (0) for the exam and not be given a make up exam. 
-
 - If students experience an unforeseen technical problem that prevents them from taking the exam, they must contact their instructor and provide clear evidence of what occured within **2 hours** of their scheduled exam. If the student fails to take this appropriate course of action, they will receive a zero (0) for the exam and not be granted a make up exam.
-
 - If the proctor interrupts the student during their exam and the student fails to follow **ALL** the instructions given by the proctor *(spoken and/or written in the chat window)*, the student will receive a zero (0) for the exam and will not be granted a make up exam.
-
 - The exam room should be clean and clear of all materials, and therefore, any material found on, in or around the testing room will be considered unauthorized testing materials. If a student is found to have any unauthorized materials (phones, watches, calculators, notes, books, roommates, food/drinks, other internet browser windows, etc.) in the testing area, they will receive a zero (0) for the exam and not be given a make up exam."
 	
 	if(courseNum == '101'){
@@ -505,7 +526,7 @@ exams <- function(courseNum,examity){
 		}
 	} 	 
 	else if(courseNum == '251'){
-		exam1 = 'There are two exams in Spanish 251, midterm and final, which include all material covered in class, course related assignments, and homework. The exams include sections on reading, writing, vocabulary, and grammar.'
+		exam1 = 'There are two exams in Spanish 251, midterm and final, which include all material covered in class, course related assignments, and homework.'
 		exam2 = '1, 2 and 3.'
 		exam3 = '4, 5 and 6.'
 		examRegs = 'See [**Final Exam Schedules and Final Exam Regulations**](http://www.registrar.arizona.edu/schedules/finals.htm) for further information.'
@@ -548,21 +569,16 @@ exams <- function(courseNum,examity){
 	else{
 		examText = sprintf("%s Appropriate use of vocabulary, comprehension and comprehensibility will be emphasized. The exams include sections on listening, reading, writing, vocabulary, grammar, and cultural material.
 
-Scheduling a trip, a move and/or oversleeping are not considered valid reasons for missing any exam. If a student oversleeps, it is better to arrive late to the exam than to not take it at all, which will result in a zero (0). No test may be made up, unless you have notified your instructor and you have a Dean’s Excuse of which you must provide a copy for the department of Spanish and Portuguese. If you have other appointments, you will need to reschedule them, as the exams take top priority. Students who do not take the exam on the day and time that it is scheduled and who have not followed these procedures will receive a zero (0) for the exam. For any exceptions, please see your instructor immediately. None of the tests are curved and if a student has failed an exam, they should see their instructor immediately.
+Scheduling a trip, a move and/or oversleeping are not considered valid reasons for missing any exam. If a student oversleeps, it is better to arrive late to the exam than to not take it at all, which will result in a zero (0). No test may be made up, unless you have notified your instructor and you have a Dean’s Excuse of which you must provide a copy for the department of Spanish and Portuguese. If you have other appointments, you will need to reschedule them, as the exams take top priority. Students who do not take the exam on the day and time that it is scheduled and who have not followed these procedures will receive a zero (0) for the exam. None of the tests are curved and if a student has failed an exam, they should see their instructor immediately.
 
 *PLEASE NOTE:* Wearing hats/caps/sunglasses and/or using electronic devices including but not limited to cell phones, electronic translators, pagers and computers are strictly prohibited during any exam. Any student found to be violating these policies will be removed from the exam room and receive a zero (0) for that exam.
 
 - **Midterm Exam:** The exam covers chapters %s %s %s
 - **Final Exam:** The exam covers chapters %s %s %s
-
 %s", exam1, exam2, exam4, exam6, exam3, exam6, examRegs, exam7)
 	}
 	return(examText)
 }
-
-
-
-
 
 # Set functions necessary to compile all documents
 renderMarkdown <- function(course,template){	
@@ -635,11 +651,11 @@ for(course in coursesCombined) {
 		learningOutcomes = span101LO
 		requiredTexts = requiredTexts100
 		recommendedMaterials = recommendedMaterials100
-		gradeTable = regular100GradeTable
+		gradeTable = intensive7weeks100GradeTable
 		coursePolicy = do.call("policies",list(courseNum))
 		attendance = attendance3day
 		onlineInstruction = ''
-		groupSkits = do.call("skits",list(courseNum))
+		groupSkits = '' #do.call("skits",list(courseNum))
 		pairInterviews = do.call("interviews",list(courseNum))
 		inclassWritings = do.call("writings",list(courseNum))
 		essayEditing = ''
@@ -660,11 +676,11 @@ for(course in coursesCombined) {
 		learningOutcomes = span102LO
 		requiredTexts = requiredTexts100
 		recommendedMaterials = recommendedMaterials100
-		gradeTable = regular100GradeTable
+		gradeTable = intensive7weeks100GradeTable
 		coursePolicy = do.call("policies",list(courseNum))
 		attendance = attendance3day
 		onlineInstruction = ''
-		groupSkits = do.call("skits",list(courseNum))
+		groupSkits = '' #do.call("skits",list(courseNum))
 		pairInterviews = do.call("interviews",list(courseNum))
 		inclassWritings = do.call("writings",list(courseNum))
 		essayEditing = ''
@@ -814,8 +830,8 @@ for(course in coursesCombined) {
 			attendance = attendance3day
 		}
 		onlineInstruction = ''
-		groupSkits = do.call("skits",list(courseNum))
-		pairInterviews = '' #do.call("interviews",list(courseNum))
+		groupSkits = '' #do.call("skits",list(courseNum))
+		pairInterviews = do.call("interviews",list(courseNum))
 		inclassWritings = do.call("writings",list(courseNum))
 		essayEditing = ''
 		exam = do.call("exams",list(courseNum,examity))
@@ -845,7 +861,7 @@ for(course in coursesCombined) {
 		}
 		onlineInstruction = ''
 		groupSkits = do.call("skits",list(courseNum))
-		pairInterviews = do.call("interviews",list(courseNum))
+		pairInterviews = '' #do.call("interviews",list(courseNum))
 		inclassWritings = do.call("writings",list(courseNum))
 		essayEditing = essayEdits
 		exam = do.call("exams",list(courseNum,examity))

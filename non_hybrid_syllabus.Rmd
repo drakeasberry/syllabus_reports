@@ -42,11 +42,11 @@ knitr::opts_chunk$set(echo = TRUE)
 
 **Course Objectives:**
 
-By the end of Spanish `r courseNum`, students will be able to …
-
 `r courseObjectives`
 
 **Learning Outcomes:**
+
+By the end of Spanish `r courseNum`, students will be able to …
 
 `r learningOutcomes`
 
@@ -62,7 +62,7 @@ By the end of Spanish `r courseNum`, students will be able to …
 
 **Grades:**
 
-Final grade will be calculated according to the table below.
+The final grade will be calculated according to the table below.
 
 `r gradeTable`
 
@@ -102,3 +102,5 @@ Final grade will be calculated according to the table below.
 `r nonDiscriminatory`
 
 `r codeOfConduct`
+
+`r departmentAds`
