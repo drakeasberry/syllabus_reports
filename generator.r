@@ -1,7 +1,7 @@
 #rmarkdown::render("syllabus.Rmd")
 
 ## @kniter variables
-
+# Change the semester below to the correct semester for which you are building syllabi
 semester = "Fall 2019"
 courses101 = list('101 MTWR','101 MW', '101 TR')
 courses102 = list('102 MTWR','102 MW', '102 TR')
@@ -14,7 +14,7 @@ courses202 = list('202 MTWR','202 MW', '202 TR')
 courses205 = list('205 MTWR', '205 TR')
 courses206 = list('206 MTWR', '206 MW')
 courses251 = list('251 MWF', '251 TR')
-
+library("stringr")
 
 # Course Objectives by course level
 span101CO = '- Students will develop the ability to communicate using Spanish in practical, everyday situations with memorized language—words, phrases and simple sentences. 
@@ -167,7 +167,7 @@ attendance3day = "Regular class attendance is essential for successful completio
   - A student with six (6) absences, the student's final grade will drop by 6 percentage points.
   - A student with eight (8) absences, the student's final grade will drop by 10 percentage points **(That's an entire letter grade)**.
   
-If a student stops attending class, it is the student's responsibility to drop the class. In compliance with Undergraduate Syllabus Policy instructors may not accept students’ documentation of health-related issues in order to have an excused absence. If a student is experiencing an unexpected barrier to their success in their courses, the Dean of Students Office is a central support resource for all students and may be helpful. The Dean of Students Office is located in the Robert L. Nugent Building Room 100, or call 520-621-7057."
+If a student stops attending class, it is the student's responsibility to drop the class. In compliance with the Undergraduate Syllabus Policy instructors may not accept students’ documentation of health-related issues in order to have an excused absence. If a student is experiencing an unexpected barrier to their success in their courses, the Dean of Students Office is a central support resource for all students and may be helpful. The Dean of Students Office is located in the Robert L. Nugent Building Room 100, or call 520-621-7057."
 
 attendance5day = "Regular class attendance is essential for successful completion of this course. With the exception of days scheduled for tests, quizzes, or in-class writings, students may miss five (5) classes for any reason, personal, medical, etc. Absences for any sincerely held religious belief, observance or practice will be accommodated where reasonable, [**University of Arizona Attendance Policy**](http://policy.arizona.edu/human-resources/religious-accommodation-policy). Absences pre-approved by the UA Dean of Students (or Dean’s designee) will be honored.
 
@@ -179,15 +179,15 @@ attendance5day = "Regular class attendance is essential for successful completio
   - A student with eight (8) absences, the student's final grade will drop by 6 percentage points.
   - A student with ten (10) absences, the student's final grade will drop by 10 percentage points **(That's an entire letter grade)**.
   
-If a student stops attending class, it is the student's responsibility to drop the class. In compliance with Undergraduate Syllabus Policy instructors may not accept students’ documentation of health-related issues in order to have an excused absence. If a student is experiencing an unexpected barrier to their success in their courses, the Dean of Students Office is a central support resource for all students and may be helpful. The Dean of Students Office is located in the Robert L. Nugent Building Room 100, or call 520-621-7057."
+If a student stops attending class, it is the student's responsibility to drop the class. In compliance with the Undergraduate Syllabus Policy instructors may not accept students’ documentation of health-related issues in order to have an excused absence. If a student is experiencing an unexpected barrier to their success in their courses, the Dean of Students Office is a central support resource for all students and may be helpful. The Dean of Students Office is located in the Robert L. Nugent Building Room 100, or call 520-621-7057."
 
-essayEdits = 'The in-class writings will provide time for students to focus on the writing process—brainstorming, rough drafts, editing/revising, peer editing and final draft submission. You must be present and actively complete all steps in the writing process to receive full credit. 
+essayEdits = 'Two of the in-class writings will provide time for students to focus on the writing process—brainstorming, rough drafts, editing/revising, peer editing and final draft submission. You must be present and actively complete all steps in the writing process to receive full credit. 
 
 - Rough Draft (30 percent)
 - Peer Editing (10 percent)
 - Final Draft (60 percent)
 
-If you are absent or fail to complete any portion of the in-class writing, you will automatically lose the points associated with each missed task. You will turn in the rough draft, the peer revision sheet, the final draft (typed and double-spaced in Times New Roman font size 12, with 1” margins), and the printed grading rubric as a packet found in D2L. If the final draft is not handed in on the due date with the original rough draft and peer editing work, you will receive a zero for the final draft.'
+If you are absent or fail to complete any portion of the in-class writing, you will automatically lose the points associated with each missed task. You will turn in the rough draft, the peer revision sheet, the final draft (typed and double-spaced in Times New Roman font size 12, with 1” margins), and the printed grading rubric as a packet found in D2L. If the final draft is not handed in on the due date with the original rough draft and peer editing work, you will receive a zero for the final draft. A third in-class writing will be completed and turned before the end of regular class time following the presentation of group skits.'
 
 essay251 = 'There are two essays during the semester that will use three class days, which will provide time for students to focus on the writing process—brainstorming, rough drafts, editing/revising, peer editing and final draft submission. All drafts and final versions must be typed, double-spaced, and include a heading and title. The students should use 12 point and Times New Roman font. Essays should be submitted with student name, instructor name, course name and section number, and the date in the upper left-hand corner of the first page. All additional pages will only have the last name of the student and the page number in upper right-hand corner as a document header.
 
@@ -195,7 +195,7 @@ You must be present and actively complete all steps in the writing process to re
 
 discussions251 = 'Discussions are based on reading assignments that are first prepared at home. The students will read a short story or an excerpt from a short story at home and come to class prepared to discuss the reading and ready to complete in-class written assignments. In class, the students will analyze and discuss the designated literary reading, as well as work on vocabulary.'
 
-onlineInstruction = '**Online Instruction:** Online instruction days are those in which there are no classroom meetings, but instruction is done online at a time that fits into your schedule. You will have the entire day, the deadline is 11:59 pm, to complete all required online instructional materials and textbook activities.
+onlineInstructionHybrid = '**Online Instruction:** Online instruction days are those in which there are no classroom meetings, but instruction is done online at a time that fits into your schedule. You will have the entire day, the deadline is 11:59 pm, to complete all required online instructional materials and textbook activities.
 
 *PLEASE NOTE:* The material assigned for online days must be completed the day it is assigned. No make-up or late work will be accepted. The instructor will teach the following class expecting that all students have completed the online work assigned. In the event that you do not complete the work on time, it is the responsibility of the student to cover the missed material on their own time.'
 
@@ -203,7 +203,7 @@ rpaDescs = '**Reading Preparation Assignments (RPAs):** During the semester, you
 
 Students will read the sample of literature at home before coming to class and then complete the RPA assignment in class with your instructor and classmates. Students will answer vocabulary questions, read and analyze the designated reading assignment and answer post-reading analysis and interpretation questions. Students must come to class ready to discuss the readings and assignments.'
 
-lessonTests = '**Lesson Tests:** This section includes all announced or unannounced quizzes that the instructor chooses to give throughout the semester. Lesson tests are designed following *Principles of Universal Design* and will be delivered via your required VHLCentral/Portales access [**VHLCentral**](https://www.vhlcentral.com) website. The lesson tests may focus on listening comprehension, reading comprehension, grammar, vocabulary and/or culture. No lesson test/unannounced quizzes may be made up for any reason. If you experience any technical difficulties while attempting to complete your lesson tests, you must fill out a **Report a technical problem** form immediately, which is found within the help menu at top right of the lesson test. Complete the form with as much detail as possible, explaining the problem you are having. Your instructor is not responsible for maintaining the VHLCentral/Portales online learning system or resolving technical issues; therefore, s/he is unable to help you with any technical and/or scheduling problems you may encounter. If a problem that you reported to VHL persists, you may report the issue with the incident number provided by VHL to your instructor.'
+lessonTests = '**Lesson Tests:** This section includes all announced or unannounced quizzes that the instructor chooses to give throughout the semester. Lesson tests are designed following *Principles of Universal Design* and will be delivered via your required VHLCentral/Portales access [**VHLCentral**](https://www.vhlcentral.com) website. The lesson tests may focus on listening comprehension, reading comprehension, grammar, vocabulary and/or culture. No lesson test/unannounced quizzes may be made up for any reason. If you experience any technical difficulties while attempting to complete your lesson tests, you must fill out a [**Report a technical problem**](https://support.vhlcentral.com/hc/en-us/categories/201891218-Student) form immediately, which is found within the help menu at top right of the lesson test. Complete the form with as much detail as possible, explaining the problem you are having. Your instructor is not responsible for maintaining the VHLCentral/Portales online learning system or resolving technical issues; therefore, s/he is unable to help you with any technical and/or scheduling problems you may encounter. If a problem that you reported to VHL persists, you may report the issue with the incident number provided by VHL to your instructor.'
 
 quizzes = '**Quizzes** This section includes all announced quizzes or any unannounced quizzes that the instructor chooses to give at the [**D2L course website**](http://www.d2l.arizona.edu) or during scheduled class times. The quizzes may focus on listening comprehension, reading comprehension, grammar, vocabulary, or culture. No quiz may be made up for any reason. If you experience any technical difficulties while attempting to complete your D2L quizzes you should fill out a [**Report a Problem**](http://help.d2l.arizona.edu) form immediately with as much detail as possible explaining the problem you are having. Your instructor is not responsible for maintaining the D2L system; therefore, s/he is unable to help you with any technical and/or scheduling problems you may encounter. Failure to take appropriate measures when experiencing technical issues within **24 hours** of the quiz deadline will result in a zero (0) for the quiz.'
 
@@ -211,7 +211,7 @@ vhlHomework = '**VHLCentral & Homework:** The online exercises and assessments i
 
 ilrnHomework = '**iLrn & Homework:** The workbook exercises are to be finished after you have completed the related in-class textbook material, since the online workbook contextualizes the material from the textbook. The online workbook includes written activities and presents additional grammatical activities and, therefore, is an integral component of the course. You must complete each assigned iLrn activity and any other homework your instructor chooses to assign outside of class time by the due date. No late homework is accepted. See the calendar on the iLrn website for assigned activities and due dates.'
 
-thinkTank = "**Think Tank Spanish Tutoring:** The Department of Spanish and Portuguese offers free tutoring Monday through Friday at the Bear Down Gym from 9:00 am to 1:00 pm, and at the Student Recreation Center from 1:00 pm to 5:00 pm. This is a cooperative service between the Department of Spanish and Portuguese and the THINK TANK for on-campus academic support, which allows you to reach a Spanish instructor and receive instant feedback. This service provides 40 hours per week of tutoring so students have the opportunity to ask questions regarding the target language and culture. For more information, please visit the [**Student Affairs Website**](http://thinktank.arizona.edu/tutoring/language). 
+thinkTank = "**Think Tank Spanish Tutoring:** The Department of Spanish and Portuguese offers free tutoring Monday through Friday from 9:00 am to 5:00 pm. Visit the [**Think Tank Website**](https://thinktank.arizona.edu/language) for details on time and location. This is a cooperative service between the Department of Spanish and Portuguese and the THINK TANK for on-campus academic support, which allows you to reach a Spanish instructor and receive instant feedback. This service provides 40 hours per week of tutoring so students have the opportunity to ask questions regarding the target language and culture. For more information, please visit the [**Student Affairs Website**](http://thinktank.arizona.edu/tutoring/language). 
 
 *PLEASE NOTE:* Spanish tutors will not correct your writing assignments before the final grade has been given."
 
@@ -250,7 +250,7 @@ descriptions <- function(course,courseNum){
 	week7s = ''
 	hybridIntro = ''
 	hybridOutro = ''
-	outro = 'and approximately two hours of preparation outside of class for every hour of in-class instruction.'
+	outro = 'The course requires regular classroom participation and approximately two hours of preparation outside of class for every hour of in-class instruction.'
 	intensive = ''
 	if(length(grep('weeks', course)) != 0){
 		week7s = sprintf('**Spanish %s 7 weeks course is an accelerated class** that covers Spanish %s material taught in traditional 16-week courses at the University of Arizona. It is recommended for highly motivated students and/or those with previous experience in another romance language.', courseNum, courseNum)
@@ -285,7 +285,7 @@ descriptions <- function(course,courseNum){
 		descriptionText = 'Spanish 251 is an intermediate Spanish course that links the Basic Language Program courses (Spanish 101-202) and the Upper Division Spanish classes (Spanish 300 and 400 courses). This course is designed to continue building the four language skills—reading, writing, listening and speaking—with an emphasis on composition. Written compositions will be completed in formal and informal registers where students are expected to utilize and build confidence of intermediate-level grammatical concepts and structures. The course requires regular classroom participation and approximately two hours of outside preparation for every hour of in-class instruction.'
 	}
 	else{
-		descriptionText = sprintf('%s%s%s Spanish %s is designed as an introduction to the Spanish language and the many facets of Hispanic culture. This course %s to develop all four core language skills—speaking, listening, reading, and writing. The course requires regular classroom participation %s%s',week7s,hybridIntro,intensive,courseNum,verbDesc,outro,hybridOutro)
+		descriptionText = sprintf('%s%s%s Spanish %s is designed as an introduction to the Spanish language and the many facets of Hispanic culture. This course %s to develop all four core language skills—speaking, listening, reading, and writing. %s%s',week7s,hybridIntro,intensive,courseNum,verbDesc,outro,hybridOutro)
 	}
 
 	return(descriptionText)
@@ -581,18 +581,24 @@ Scheduling a trip, a move and/or oversleeping are not considered valid reasons f
 }
 
 # Set functions necessary to compile all documents
-renderMarkdown <- function(course,template){	
+renderMarkdown <- function(course, courseDir, template){	
+	#cat(paste(course, 'is inside function now'))
+	outDir = sprintf('./Syllabi/%s/',courseDir)
+	#paste(outDir)
 	rmarkdown::render(template,
-	output_file = paste(course, ' Syllabus.pdf',sep=''),
-	output_dir = './outputs/')
+	output_file = paste(courseDir, '_Syllabus.pdf',sep=''),
+	output_dir = outDir)
 }
 
 
 for(course in coursesCombined) {
 	if(is.element(course,coursesHybrid101)){
 		examity = TRUE
-		template = 'non_hybrid_syllabus.Rmd'
+		template = 'syllabus.Rmd'
 		courseNum = '101'
+		courseDir1 = str_replace_all(course,'\\s','_')
+		courseDir = str_replace_all(courseDir1,'Hybrid_101','101_Hybrid')
+		#print(courseDir)
 		#courseShort = c('Hybrid', courseNum, sep='')
 		#addition1 = 'begin'
 		#addition2 = ''
@@ -604,7 +610,7 @@ for(course in coursesCombined) {
 		gradeTable = hybridGradeTable
 		coursePolicy = do.call("policies",list(courseNum))
 		attendance = attendance3day
-		onlineInstruction = onlineInstruction
+		onlineInstruction = onlineInstructionHybrid
 		groupSkits = do.call("skits",list(courseNum))
 		pairInterviews = do.call("interviews",list(courseNum))
 		inclassWritings = do.call("writings",list(courseNum))
@@ -616,8 +622,10 @@ for(course in coursesCombined) {
 	}
 	else if(is.element(course,coursesHybrid102)){
 		examity = TRUE
-		template = 'non_hybrid_syllabus.Rmd'
+		template = 'syllabus.Rmd'
 		courseNum = '102'
+		courseDir1 = str_replace_all(course,'\\s','_')
+		courseDir = str_replace_all(courseDir1,'Hybrid_102','102_Hybrid')
 		#courseShort = c('Hybrid', courseNum, sep=' ')
 		#addition1 = 'continue'
 		#addition2 = '—that were the focus of the first semester Spanish courses at the University of Arizona'
@@ -629,7 +637,7 @@ for(course in coursesCombined) {
 		gradeTable = hybridGradeTable
 		coursePolicy = do.call("policies",list(courseNum))
 		attendance = attendance3day
-		onlineInstruction = onlineInstruction
+		onlineInstruction = onlineInstructionHybrid
 		groupSkits = do.call("skits",list(courseNum))
 		pairInterviews = do.call("interviews",list(courseNum))
 		inclassWritings = do.call("writings",list(courseNum))
@@ -641,8 +649,10 @@ for(course in coursesCombined) {
 	}
 	else if(is.element(course,courses7weeks101)){
 		examity = TRUE
-		template = 'non_hybrid_syllabus.Rmd'
+		template = 'syllabus.Rmd'
 		courseNum = '101'
+		courseDir1 = str_replace_all(course,'\\s','_')
+		courseDir = str_replace_all(courseDir1,'7_weeks_','7wk')
 		#courseShort = c('Hybrid', courseNum, sep=' ')
 		#addition1 = 'begin'
 		#addition2 = ''
@@ -666,8 +676,10 @@ for(course in coursesCombined) {
 	}
 	else if(is.element(course,courses7weeks102)){
 		examity = TRUE
-		template = 'non_hybrid_syllabus.Rmd'
+		template = 'syllabus.Rmd'
 		courseNum = '102'
+		courseDir1 = str_replace_all(course,'\\s','_')
+		courseDir = str_replace_all(courseDir1,'7_weeks_','7wk')
 		#courseShort = c('Hybrid', courseNum, sep=' ')
 		#addition1 = 'continue'
 		#addition2 = '—that were the focus of the first semester Spanish courses at the University of Arizona'
@@ -691,8 +703,9 @@ for(course in coursesCombined) {
 	}
 	else if(is.element(course,courses101)){
 		examity = FALSE
-		template = 'non_hybrid_syllabus.Rmd'
+		template = 'syllabus.Rmd'
 		courseNum = '101'
+		courseDir = str_replace_all(course,'\\s','_')
 		#courseShort = c('Hybrid', courseNum, sep=' ')
 		#addition1 = 'begin'
 		#addition2 = ''
@@ -721,8 +734,9 @@ for(course in coursesCombined) {
 	}
 	else if(is.element(course,courses102)){
 		examity = FALSE
-		template = 'non_hybrid_syllabus.Rmd'
+		template = 'syllabus.Rmd'
 		courseNum = '102'
+		courseDir = str_replace_all(course,'\\s','_')
 		#courseShort = c('Hybrid', courseNum, sep=' ')
 		#addition1 = 'continue'
 		#addition2 = '—that were the focus of the first semester Spanish courses at the University of Arizona'
@@ -751,8 +765,9 @@ for(course in coursesCombined) {
 	}
 	else if(is.element(course,courses201)){
 		examity = FALSE
-		template = 'non_hybrid_syllabus.Rmd'
+		template = 'syllabus.Rmd'
 		courseNum = '201'
+		courseDir = str_replace_all(course,'\\s','_')
 		#courseShort = c('Hybrid', courseNum, sep=' ')
 		#addition1 = 'continue'
 		#addition2 = ''
@@ -781,8 +796,9 @@ for(course in coursesCombined) {
 	}
 	else if(is.element(course,courses202)){
 		examity = FALSE
-		template = 'non_hybrid_syllabus.Rmd'
+		template = 'syllabus.Rmd'
 		courseNum = '202'
+		courseDir = str_replace_all(course,'\\s','_')
 		#courseShort = c('Hybrid', courseNum, sep=' ')
 		#addition1 = 'continue'
 		#addition2 = ''
@@ -811,8 +827,9 @@ for(course in coursesCombined) {
 	}
 	else if(is.element(course,courses205)){
 		examity = TRUE
-		template = 'non_hybrid_syllabus.Rmd'
+		template = 'syllabus.Rmd'
 		courseNum = '205'
+		courseDir = str_replace_all(course,'\\s','_')
 		#courseShort = c('Hybrid', courseNum, sep=' ')
 		#addition1 = 'continue'
 		#addition2 = ''
@@ -841,8 +858,9 @@ for(course in coursesCombined) {
 	}
 	else if(is.element(course,courses206)){
 		examity = TRUE
-		template = 'non_hybrid_syllabus.Rmd'
+		template = 'syllabus.Rmd'
 		courseNum = '206'
+		courseDir = str_replace_all(course,'\\s','_')
 		#courseShort = c('Hybrid', courseNum, sep=' ')
 		#addition1 = 'continue'
 		#addition2 = ''
@@ -871,8 +889,9 @@ for(course in coursesCombined) {
 	}		
 	else if(is.element(course,courses251)){
 		examity = FALSE
-		template = 'non_hybrid_syllabus.Rmd'
+		template = 'syllabus.Rmd'
 		courseNum = '251'
+		courseDir = str_replace_all(course,'\\s','_')
 		#courseShort = c('Hybrid', courseNum, sep=' ')
 		#addition1 = ''
 		#addition2 = ''
@@ -901,6 +920,7 @@ for(course in coursesCombined) {
 		#addition = 'UNAVAILABLE'
 		next
 	}
+	cat(paste(courseDir))
 	#call markdownRender here
-	do.call("renderMarkdown",list(course,template))
+	do.call("renderMarkdown",list(course, courseDir, template))
 }

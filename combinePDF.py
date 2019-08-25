@@ -25,7 +25,6 @@ def merger(output_path, input_paths):
 # Loops through each subdirectory of 'Syllabi' and merges two pdfs into one
 # PDF output is tagged with date for future reference 
 for directory in subDirs:
-    items = []
     # Change current working directory
     os.chdir(syllabiDir+directory+'/')
     # Find all PDF files in current working directory
@@ -37,6 +36,8 @@ for directory in subDirs:
     # Sets variable to today's date in sortable format
     date = datetime.today().strftime('%Y_%m_%d')
     # Sets output PDF file name
-    output = items+date
-    # Calls merger function to combine PDF files
-    merger(output+'.pdf',files_sorted)
+    output = items+'_'+date
+    if len(files_sorted) == 2:    
+        # Calls merger function to combine PDF files
+        merger(output+'.pdf',files_sorted)
+        #print(files_sorted, 'Length of list is: ', len(files_sorted))
