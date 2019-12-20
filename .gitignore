@@ -9,7 +9,7 @@ out
 gen
 
 # Don't track semester calendar files
-.xlsm
+*.xlsm
 
 # Don't Track script output files
 Syllabi/
