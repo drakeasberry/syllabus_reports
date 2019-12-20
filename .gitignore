@@ -1,1 +1,19 @@
 # Created by .ignore support plugin (hsz.mobi)
+### Example user template template
+### Example user template
+
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+
+# Don't track semester calendar files
+.xlsm
+
+# Don't Track script output files
+Syllabi/
+Uploads/
+
+# Don't track R preferences
+.Rhistory
