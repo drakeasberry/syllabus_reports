@@ -117,6 +117,7 @@ regular100GradeTable = '
 |In-class Writings	|15%    |VHL Central & Homework	 |20%    |
 '
 
+# no longer in use as of Spring 2020
 intensive7weeks100GradeTable = '
 |Category           |Weight |Category                |Weight |
 |-------------------|:-----:|------------------------|:-----:|
@@ -134,14 +135,16 @@ regular200GradeTable = '
 |RPAs	         	|10%    |						 |       |
 '
 
+# Should we keep exams at 40 by changeing lesson tests to 10 and VHL to 15?
 intensive205GradeTable = '
 |Category           |Weight |Category                |Weight |
 |-------------------|:-----:|------------------------|:-----:|
-|Pair Conversations |10%    |Exams	         		 |40%    |
-|In-class Writings  |15%    |VHL Central & Homework  |20%    |
-|Lesson Tests       |15%    |						 |       |
+|Group Skits        |10%    |Exams	             	 |30%    |
+|Pair Conversations	|10%    |Lesson Tests	         |15%    |
+|In-class Writings	|15%    |VHL Central & Homework	 |20%    |
 '
 
+# No longer in use as of Spring 2020
 intensive206GradeTable = '
 |Category           |Weight |Category                |Weight |
 |-------------------|:-----:|------------------------|:-----:|
@@ -181,17 +184,17 @@ attendance5day = "Regular class attendance is essential for successful completio
   
 If a student stops attending class, it is the student's responsibility to drop the class. In compliance with the Undergraduate Syllabus Policy instructors may not accept students’ documentation of health-related issues in order to have an excused absence. If a student is experiencing an unexpected barrier to their success in their courses, the Dean of Students Office is a central support resource for all students and may be helpful. The Dean of Students Office is located in the Robert L. Nugent Building Room 100, or call 520-621-7057."
 
-essayEdits = 'Two of the in-class writings will provide time for students to focus on the writing process—brainstorming, rough drafts, editing/revising, peer editing and final draft submission. You must be present and actively complete all steps in the writing process to receive full credit. 
+essayEdits = 'Two of the in-class writings will provide time for students to focus on the writing process—brainstorming, rough drafts, editing/revising, peer feedback and final draft submission. You must be present and actively complete all steps in the writing process to receive full credit. 
 
 - Rough Draft (30 percent)
-- Peer Editing (10 percent)
+- Peer Feedback (10 percent)
 - Final Draft (60 percent)
 
-If you are absent or fail to complete any portion of the in-class writing, you will automatically lose the points associated with each missed task. You will turn in the rough draft, the peer revision sheet, the final draft (typed and double-spaced in Times New Roman font size 12, with 1” margins), and the printed grading rubric as a packet found in D2L. If the final draft is not handed in on the due date with the original rough draft and peer editing work, you will receive a zero for the final draft. A third in-class writing will be completed and turned before the end of regular class time following the presentation of group skits.'
+If you are absent or fail to complete any portion of the in-class writing, you will automatically lose the points associated with each missed task. You will turn in the rough draft, the peer feedback sheet, the final draft (typed and double-spaced in Times New Roman font size 12, with 1” margins), and the printed grading rubric as a packet found in D2L. If the final draft is not handed in on the due date with the original rough draft and peer feedback work, you will receive a zero for the final draft. A third in-class writing will be completed and turned before the end of regular class time following the presentation of group skits.'
 
-essay251 = 'There are two essays during the semester that will use three class days, which will provide time for students to focus on the writing process—brainstorming, rough drafts, editing/revising, peer editing and final draft submission. All drafts and final versions must be typed, double-spaced, and include a heading and title. The students should use 12 point and Times New Roman font. Essays should be submitted with student name, instructor name, course name and section number, and the date in the upper left-hand corner of the first page. All additional pages will only have the last name of the student and the page number in upper right-hand corner as a document header.
+essay251 = '**Essays:** There are two essays during the semester that will use multiple class days, which will provide time for students to focus on the writing process—brainstorming, rough drafts, editing/revising, peer feedback and final draft submission. All drafts and final versions must be typed, double-spaced, and include a heading and title. The students should use 12 point and Times New Roman font. Essays should be submitted with student name, instructor name, course name and section number, and the date in the upper left-hand corner of the first page. All additional pages will only have the last name of the student and the page number in upper right-hand corner as a document header.
 
-You must be present and actively complete all steps in the writing process to receive full credit. If you are absent or fail to complete the in-class writing of the outline (10% of essay grade), rough draft (20% of essay grade) or the peer editing (10% of essay grade) during allotted class time, you will automatically lose the points associated with each task. You will turn in the outline, rough draft, the peer revision sheet, the final draft, and the printed grading rubric as a packet at the end of the second in-class writing day. If the final draft (60%) is not handed in on the due date with the original rough draft and peer editing work, you will receive a zero for the final draft.'
+You must be present and actively complete all steps in the writing process to receive full credit. If the final draft is not submitted on the due date before leaving class, you will receive a zero for the final draft.'
 
 discussions251 = 'Discussions are based on reading assignments that are first prepared at home. The students will read a short story or an excerpt from a short story at home and come to class prepared to discuss the reading and ready to complete in-class written assignments. In class, the students will analyze and discuss the designated literary reading, as well as work on vocabulary.'
 
@@ -337,7 +340,7 @@ skits <- function(courseNum){
 
 Groups will consist of a minimum of three students who will collectively perform a short %s minute live skit, which will be viewed by your peers and your instructor. Please consult with the instructor to get prior approval of the group’s topic and to avoid the repetition of ideas. 
 
-*PLEASE NOTE:* If the student reads any part of the presentation, 50 percent will automatically be taken off of the final grade for this group oral presentation. Please review the rubric for this presentation found in D2L before and during the skit’s preparation.', skitTime)
+*PLEASE NOTE:* If the student reads any part of the skit, 50 percent will automatically be taken off of the final grade for this group skit. Please review the rubric for group skits found in D2L before and during the skit’s preparation.', skitTime)
 	return(skitText)
 }
 
