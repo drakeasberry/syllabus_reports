@@ -2,7 +2,7 @@
 
 ## @kniter variables
 # Change the semester below to the correct semester for which you are building syllabi
-semester = "Fall 2019"
+semester = "Spring 2020"
 courses101 = list('101 MTWR','101 MW', '101 TR')
 courses102 = list('102 MTWR','102 MW', '102 TR')
 coursesHybrid101 = list('Hybrid 101 MW', 'Hybrid 101 TR')
