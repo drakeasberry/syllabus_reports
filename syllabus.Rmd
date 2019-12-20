@@ -44,7 +44,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 `r courseObjectives`
 
-**Learning Outcomes:**
+**Student Learning Outcomes:**
 
 By the end of Spanish `r courseNum`, students will be able to …
 
