@@ -593,8 +593,9 @@ renderMarkdown <- function(course, courseDir, template){
 	output_dir = outDir)
 }
 
-
+# This section sets all directions for each course so appropriate content is added to each individual syllabus
 for(course in coursesCombined) {
+	# Hybrid 101 setup
 	if(is.element(course,coursesHybrid101)){
 		examity = TRUE
 		template = 'syllabus.Rmd'
@@ -615,10 +616,11 @@ for(course in coursesCombined) {
 		inclassWritings = do.call("writings",list(courseNum))
 		essayEditing = ''
 		exam = do.call("exams",list(courseNum,examity))
-		rpaDesc = ''
+		rpaDesc = '' # Only used in 201, 202 and 206
 		lessonTestsQuizzes = lessonTests
 		homework = vhlHomework
 	}
+	# Hybrid 102 setup
 	else if(is.element(course,coursesHybrid102)){
 		examity = TRUE
 		template = 'syllabus.Rmd'
@@ -639,10 +641,11 @@ for(course in coursesCombined) {
 		inclassWritings = do.call("writings",list(courseNum))
 		essayEditing = ''
 		exam = do.call("exams",list(courseNum,examity))
-		rpaDesc = ''
+		rpaDesc = '' # Only used in 201, 202 and 206
 		lessonTestsQuizzes = lessonTests
 		homework = vhlHomework
 	}
+	# 101 7 weeks setup
 	else if(is.element(course,courses7weeks101)){
 		examity = TRUE
 		template = 'syllabus.Rmd'
@@ -657,16 +660,17 @@ for(course in coursesCombined) {
 		gradeTable = regular100GradeTable
 		coursePolicy = do.call("policies",list(courseNum))
 		attendance = attendance3day
-		onlineInstruction = ''
+		onlineInstruction = '' # Only used in Hybrid courses
 		groupSkits = do.call("skits",list(courseNum))
 		pairInterviews = do.call("interviews",list(courseNum))
 		inclassWritings = do.call("writings",list(courseNum))
 		essayEditing = ''
 		exam = do.call("exams",list(courseNum,examity))
-		rpaDesc = ''
+		rpaDesc = '' # Only used in 201, 202 and 206
 		lessonTestsQuizzes = lessonTests
 		homework = vhlHomework
 	}
+	# 102 7 weeks setup
 	else if(is.element(course,courses7weeks102)){
 		examity = TRUE
 		template = 'syllabus.Rmd'
@@ -681,16 +685,17 @@ for(course in coursesCombined) {
 		gradeTable = regular100GradeTable
 		coursePolicy = do.call("policies",list(courseNum))
 		attendance = attendance3day
-		onlineInstruction = ''
+		onlineInstruction = '' # Only used in Hybrid courses
 		groupSkits = do.call("skits",list(courseNum))
 		pairInterviews = do.call("interviews",list(courseNum))
 		inclassWritings = do.call("writings",list(courseNum))
 		essayEditing = ''
 		exam = do.call("exams",list(courseNum,examity))
-		rpaDesc = ''
+		rpaDesc = '' # Only used in 201, 202 and 206
 		lessonTestsQuizzes = lessonTests
 		homework = vhlHomework
 	}
+	# 101 Regular, MW and TR course setup
 	else if(is.element(course,courses101)){
 		examity = FALSE
 		template = 'syllabus.Rmd'
@@ -703,22 +708,24 @@ for(course in coursesCombined) {
 		recommendedMaterials = recommendedMaterials100
 		gradeTable = regular100GradeTable
 		coursePolicy = do.call("policies",list(courseNum))
+		# Sets attendance to 5 days for regular courses and 3 days for other courses
 		if(course == '101 MTWR'){
 			attendance = attendance5day
 		}
 		else{
 			attendance = attendance3day
 		}
-		onlineInstruction = ''
+		onlineInstruction = '' # Only used in Hybrid courses
 		groupSkits = do.call("skits",list(courseNum))
 		pairInterviews = do.call("interviews",list(courseNum))
 		inclassWritings = do.call("writings",list(courseNum))
 		essayEditing = ''
 		exam = do.call("exams",list(courseNum,examity))
-		rpaDesc = ''
+		rpaDesc = '' # Only used in 201, 202 and 206
 		lessonTestsQuizzes = lessonTests
 		homework = vhlHomework
 	}
+	# 102 Regular, MW and TR course setup
 	else if(is.element(course,courses102)){
 		examity = FALSE
 		template = 'syllabus.Rmd'
@@ -731,22 +738,24 @@ for(course in coursesCombined) {
 		recommendedMaterials = recommendedMaterials100
 		gradeTable = regular100GradeTable
 		coursePolicy = do.call("policies",list(courseNum))
+		# Sets attendance to 5 days for regular courses and 3 days for other courses
 		if(course == '102 MTWR'){
 			attendance = attendance5day
 		}
 		else{
 			attendance = attendance3day
 		}
-		onlineInstruction = ''
+		onlineInstruction = '' # Only used in Hybrid courses
 		groupSkits = do.call("skits",list(courseNum))
 		pairInterviews = do.call("interviews",list(courseNum))
 		inclassWritings = do.call("writings",list(courseNum))
 		essayEditing = ''
 		exam = do.call("exams",list(courseNum,examity))
-		rpaDesc = ''
+		rpaDesc = '' # Only used in 201, 202 and 206
 		lessonTestsQuizzes = lessonTests
 		homework = vhlHomework
 	}
+	# 201 Regular, MW and TR course setup
 	else if(is.element(course,courses201)){
 		examity = FALSE
 		template = 'syllabus.Rmd'
@@ -759,13 +768,14 @@ for(course in coursesCombined) {
 		recommendedMaterials = recommendedMaterials200
 		gradeTable = regular200GradeTable
 		coursePolicy = do.call("policies",list(courseNum))
+		# Sets attendance to 5 days for regular courses and 3 days for other courses
 		if(course == '201 MTWR'){
 			attendance = attendance5day
 		}
 		else{
 			attendance = attendance3day
 		}
-		onlineInstruction = ''
+		onlineInstruction = '' # Only used in Hybrid courses
 		groupSkits = do.call("skits",list(courseNum))
 		pairInterviews = do.call("interviews",list(courseNum))
 		inclassWritings = do.call("writings",list(courseNum))
@@ -775,6 +785,7 @@ for(course in coursesCombined) {
 		lessonTestsQuizzes = quizzes
 		homework = vhlHomework
 	}
+	# 202 Regular, MW and TR course setup
 	else if(is.element(course,courses202)){
 		examity = FALSE
 		template = 'syllabus.Rmd'
@@ -787,13 +798,14 @@ for(course in coursesCombined) {
 		recommendedMaterials = recommendedMaterials200
 		gradeTable = regular200GradeTable
 		coursePolicy = do.call("policies",list(courseNum))
+		# Sets attendance to 5 days for regular courses and 3 days for other courses
 		if(course == '202 MTWR'){
 			attendance = attendance5day
 		}
 		else{
 			attendance = attendance3day
 		}
-		onlineInstruction = ''
+		onlineInstruction = '' # Only used in Hybrid courses
 		groupSkits = do.call("skits",list(courseNum))
 		pairInterviews = do.call("interviews",list(courseNum))
 		inclassWritings = do.call("writings",list(courseNum))
@@ -803,6 +815,7 @@ for(course in coursesCombined) {
 		lessonTestsQuizzes = quizzes
 		homework = vhlHomework
 	}
+	# 205 course setup
 	else if(is.element(course,courses205)){
 		examity = TRUE
 		template = 'syllabus.Rmd'
@@ -815,13 +828,14 @@ for(course in coursesCombined) {
 		recommendedMaterials = recommendedMaterials100
 		gradeTable = intensive205GradeTable
 		coursePolicy = do.call("policies",list(courseNum))
+		# Sets attendance to 5 days for regular courses and 3 days for other courses
 		if(course == '205 MTWR'){
 			attendance = attendance5day
 		}
 		else{
 			attendance = attendance3day
 		}
-		onlineInstruction = ''
+		onlineInstruction = '' # Only used in Hybrid courses
 		groupSkits = do.call("skits",list(courseNum))
 		pairInterviews = do.call("interviews",list(courseNum))
 		inclassWritings = do.call("writings",list(courseNum))
@@ -831,6 +845,7 @@ for(course in coursesCombined) {
 		lessonTestsQuizzes = lessonTests
 		homework = vhlHomework
 	}
+	# 206 course setup
 	else if(is.element(course,courses206)){
 		examity = TRUE
 		template = 'syllabus.Rmd'
@@ -843,13 +858,14 @@ for(course in coursesCombined) {
 		recommendedMaterials = recommendedMaterials200
 		gradeTable = intensive206GradeTable
 		coursePolicy = do.call("policies",list(courseNum))
+		# Sets attendance to 5 days for regular courses and 3 days for other courses
 		if(course == '206 MTWR'){
 			attendance = attendance5day
 		}
 		else{
 			attendance = attendance3day
 		}
-		onlineInstruction = ''
+		onlineInstruction = '' # Only used in Hybrid courses
 		groupSkits = do.call("skits",list(courseNum))
 		pairInterviews = do.call("interviews",list(courseNum))
 		inclassWritings = do.call("writings",list(courseNum))
@@ -859,8 +875,9 @@ for(course in coursesCombined) {
 		lessonTestsQuizzes = quizzes
 		homework = vhlHomework
 	}		
+	# 251 course setup
 	else if(is.element(course,courses251)){
-		examity = FALSE
+		examity = FALSE # Not used in SPAN 251
 		template = 'syllabus.Rmd'
 		courseNum = '251'
 		courseDir = str_replace_all(course,'\\s','_')
@@ -872,13 +889,13 @@ for(course in coursesCombined) {
 		gradeTable = regular251GradeTable
 		coursePolicy = do.call("policies",list(courseNum))
 		attendance = attendance3day
-		onlineInstruction = ''
-		groupSkits = '' #do.call("skits",list(courseNum))
-		pairInterviews = '' #do.call("interviews",list(courseNum))
+		onlineInstruction = '' # Only used in Hybrid courses
+		groupSkits = '' #do.call("skits",list(courseNum)) # Not used in SPAN 251
+		pairInterviews = '' #do.call("interviews",list(courseNum)) # Not used in SPAN 251
 		inclassWritings = do.call("writings",list(courseNum))
 		essayEditing = essay251
 		exam = do.call("exams",list(courseNum,examity))
-		rpaDesc = '' #rpaDescs
+		rpaDesc = '' #rpaDescs # Not used in SPAN 251
 		lessonTestsQuizzes = quizzes
 		homework = ilrnHomework
 	}	
