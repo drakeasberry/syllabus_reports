@@ -601,10 +601,6 @@ for(course in coursesCombined) {
 		courseNum = '101'
 		courseDir1 = str_replace_all(course,'\\s','_')
 		courseDir = str_replace_all(courseDir1,'Hybrid_101','101_Hybrid')
-		#print(courseDir)
-		#courseShort = c('Hybrid', courseNum, sep='')
-		#addition1 = 'begin'
-		#addition2 = ''
 		courseDescription = do.call("descriptions", list(course,courseNum))
 		courseObjectives = span101CO
 		learningOutcomes = span101LO
@@ -629,9 +625,6 @@ for(course in coursesCombined) {
 		courseNum = '102'
 		courseDir1 = str_replace_all(course,'\\s','_')
 		courseDir = str_replace_all(courseDir1,'Hybrid_102','102_Hybrid')
-		#courseShort = c('Hybrid', courseNum, sep=' ')
-		#addition1 = 'continue'
-		#addition2 = '—that were the focus of the first semester Spanish courses at the University of Arizona'
 		courseDescription = do.call("descriptions", list(course,courseNum))
 		courseObjectives = span102CO
 		learningOutcomes = span102LO
@@ -656,19 +649,16 @@ for(course in coursesCombined) {
 		courseNum = '101'
 		courseDir1 = str_replace_all(course,'\\s','_')
 		courseDir = str_replace_all(courseDir1,'7_weeks_','7wk')
-		#courseShort = c('Hybrid', courseNum, sep=' ')
-		#addition1 = 'begin'
-		#addition2 = ''
 		courseDescription = do.call("descriptions", list(course,courseNum))
 		courseObjectives = span101CO
 		learningOutcomes = span101LO
 		requiredTexts = requiredTexts100
 		recommendedMaterials = recommendedMaterials100
-		gradeTable = intensive7weeks100GradeTable
+		gradeTable = regular100GradeTable
 		coursePolicy = do.call("policies",list(courseNum))
 		attendance = attendance3day
 		onlineInstruction = ''
-		groupSkits = '' #do.call("skits",list(courseNum))
+		groupSkits = do.call("skits",list(courseNum))
 		pairInterviews = do.call("interviews",list(courseNum))
 		inclassWritings = do.call("writings",list(courseNum))
 		essayEditing = ''
@@ -683,19 +673,16 @@ for(course in coursesCombined) {
 		courseNum = '102'
 		courseDir1 = str_replace_all(course,'\\s','_')
 		courseDir = str_replace_all(courseDir1,'7_weeks_','7wk')
-		#courseShort = c('Hybrid', courseNum, sep=' ')
-		#addition1 = 'continue'
-		#addition2 = '—that were the focus of the first semester Spanish courses at the University of Arizona'
 		courseDescription = do.call("descriptions", list(course,courseNum))
 		courseObjectives = span102CO
 		learningOutcomes = span102LO
 		requiredTexts = requiredTexts100
 		recommendedMaterials = recommendedMaterials100
-		gradeTable = intensive7weeks100GradeTable
+		gradeTable = regular100GradeTable
 		coursePolicy = do.call("policies",list(courseNum))
 		attendance = attendance3day
 		onlineInstruction = ''
-		groupSkits = '' #do.call("skits",list(courseNum))
+		groupSkits = do.call("skits",list(courseNum))
 		pairInterviews = do.call("interviews",list(courseNum))
 		inclassWritings = do.call("writings",list(courseNum))
 		essayEditing = ''
@@ -709,9 +696,6 @@ for(course in coursesCombined) {
 		template = 'syllabus.Rmd'
 		courseNum = '101'
 		courseDir = str_replace_all(course,'\\s','_')
-		#courseShort = c('Hybrid', courseNum, sep=' ')
-		#addition1 = 'begin'
-		#addition2 = ''
 		courseDescription = do.call("descriptions", list(course,courseNum))
 		courseObjectives = span101CO
 		learningOutcomes = span101LO
@@ -740,9 +724,6 @@ for(course in coursesCombined) {
 		template = 'syllabus.Rmd'
 		courseNum = '102'
 		courseDir = str_replace_all(course,'\\s','_')
-		#courseShort = c('Hybrid', courseNum, sep=' ')
-		#addition1 = 'continue'
-		#addition2 = '—that were the focus of the first semester Spanish courses at the University of Arizona'
 		courseDescription = do.call("descriptions", list(course,courseNum))
 		courseObjectives = span102CO
 		learningOutcomes = span102LO
@@ -771,9 +752,6 @@ for(course in coursesCombined) {
 		template = 'syllabus.Rmd'
 		courseNum = '201'
 		courseDir = str_replace_all(course,'\\s','_')
-		#courseShort = c('Hybrid', courseNum, sep=' ')
-		#addition1 = 'continue'
-		#addition2 = ''
 		courseDescription = do.call("descriptions", list(course,courseNum))
 		courseObjectives = span201CO
 		learningOutcomes = span201LO
@@ -802,9 +780,6 @@ for(course in coursesCombined) {
 		template = 'syllabus.Rmd'
 		courseNum = '202'
 		courseDir = str_replace_all(course,'\\s','_')
-		#courseShort = c('Hybrid', courseNum, sep=' ')
-		#addition1 = 'continue'
-		#addition2 = ''
 		courseDescription = do.call("descriptions", list(course,courseNum))
 		courseObjectives = span202CO
 		learningOutcomes = span202LO
@@ -833,9 +808,6 @@ for(course in coursesCombined) {
 		template = 'syllabus.Rmd'
 		courseNum = '205'
 		courseDir = str_replace_all(course,'\\s','_')
-		#courseShort = c('Hybrid', courseNum, sep=' ')
-		#addition1 = 'continue'
-		#addition2 = ''
 		courseDescription = do.call("descriptions", list(course,courseNum))
 		courseObjectives = span102CO
 		learningOutcomes = span102LO
@@ -850,7 +822,7 @@ for(course in coursesCombined) {
 			attendance = attendance3day
 		}
 		onlineInstruction = ''
-		groupSkits = '' #do.call("skits",list(courseNum))
+		groupSkits = do.call("skits",list(courseNum))
 		pairInterviews = do.call("interviews",list(courseNum))
 		inclassWritings = do.call("writings",list(courseNum))
 		essayEditing = ''
@@ -864,9 +836,6 @@ for(course in coursesCombined) {
 		template = 'syllabus.Rmd'
 		courseNum = '206'
 		courseDir = str_replace_all(course,'\\s','_')
-		#courseShort = c('Hybrid', courseNum, sep=' ')
-		#addition1 = 'continue'
-		#addition2 = ''
 		courseDescription = do.call("descriptions", list(course,courseNum))
 		courseObjectives = span202CO
 		learningOutcomes = span202LO
@@ -882,7 +851,7 @@ for(course in coursesCombined) {
 		}
 		onlineInstruction = ''
 		groupSkits = do.call("skits",list(courseNum))
-		pairInterviews = '' #do.call("interviews",list(courseNum))
+		pairInterviews = do.call("interviews",list(courseNum))
 		inclassWritings = do.call("writings",list(courseNum))
 		essayEditing = essayEdits
 		exam = do.call("exams",list(courseNum,examity))
@@ -895,9 +864,6 @@ for(course in coursesCombined) {
 		template = 'syllabus.Rmd'
 		courseNum = '251'
 		courseDir = str_replace_all(course,'\\s','_')
-		#courseShort = c('Hybrid', courseNum, sep=' ')
-		#addition1 = ''
-		#addition2 = ''
 		courseDescription = do.call("descriptions", list(course,courseNum))
 		courseObjectives = span251CO
 		learningOutcomes = span251LO
