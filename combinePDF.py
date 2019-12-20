@@ -41,3 +41,4 @@ for directory in subDirs:
         # Calls merger function to combine PDF files
         merger(output+'.pdf',files_sorted)
         #print(files_sorted, 'Length of list is: ', len(files_sorted))
+print('All files combined, process complete.')

@@ -24,5 +24,7 @@ for directory in subDirs:
     #print(outDir+files[0])
     shutil.copy2(inDir+'/'+files[0],outDir+files[0])
 
+print('All files moved to Uploads folder, process complete.')
+
 
 
