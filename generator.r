@@ -135,7 +135,6 @@ regular200GradeTable = '
 |RPAs	         	|10%    |						 |       |
 '
 
-# Should we keep exams at 40 by changeing lesson tests to 10 and VHL to 15?
 intensive205GradeTable = '
 |Category           |Weight |Category                |Weight |
 |-------------------|:-----:|------------------------|:-----:|
@@ -144,13 +143,13 @@ intensive205GradeTable = '
 |In-class Writings	|15%    |VHL Central & Homework	 |20%    |
 '
 
-# No longer in use as of Spring 2020
 intensive206GradeTable = '
 |Category           |Weight |Category                |Weight |
 |-------------------|:-----:|------------------------|:-----:|
-|Group Skits        |10%    |Exams	             	 |30%    |
-|In-class Writings	|15%    |Quizzes		         |15%    |
-|RPAs	         	|10%    |VHL Central & Homework	 |20%    |
+|Group Skits        |10%    |Exams 	 	    		 |30%    |
+|Pair Conversations	|10%    |Quizzes	    	     |10%    |
+|In-class Writings	|15%    |VHL Central & Homework	 |15%    |
+|RPAs	         	|10%    |						 |       |
 '
 
 regular251GradeTable = '
